@@ -77,3 +77,9 @@ button{
   /* margin-left: 15px; */
   text-align: justify;
 }
+
+@media screen and (max-width: 768px) {
+  .container{
+    width: 80vw;
+  }
+}
