@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* width: 100vw;     fixed-width will disturb the respponsiveness of the items on different screen sizes */
+  /* height: 100vh;    fixed-Height will disturb the respponsiveness of the items on different screen sizes */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px;
+  background-color: #021f3f;
+  color: #cfcfcf;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Arial, sans-serif;
+}
+h1 {
+  font-size: 1.5rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  /* background-color: rgb(1, 177, 139); */
+  /* border-top: 5px solid black; */
+  margin-top: 5px;
+  padding: 10px 10px;
+  /* overflow: scroll; */
+}
+
+.faq-item {
+  width: 100%;
+  margin: 5px;
+  /* background-color: rgb(1, 121, 177); */
+}
+button{
+    width: 100%;
+    background: none;
+    border: none;
+    color: #cfcfcf;
+    background-color: rgb(44, 54, 54);
+    padding: 3px 3px;
+}
+.question{
+    display: flex;
+    justify-content:space-between;
+    text-align: left;
+}
+.answer {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.2s ease;
+}
+
+.faq-item.active .answer {
+    opacity: 1;
+    max-height: 300px; /* large enough for content */
+}
+.faq-item.active .arrow{
+    transform: rotate(180deg);
+    transition:all 0.3s ease-in-out;
+}
+.faq-item h2{
+  margin: 0 0 5px 0;
+  font-size: 1.05rem; /* 16px */
+  font-weight: 600;
+}
+.faq-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  /* font-size: 20px; */
+  /* margin-left: 15px; */
+  text-align: justify;
+}
