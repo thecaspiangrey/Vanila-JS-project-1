@@ -1,2 +1,2 @@
-# Vanila JS project-1
-This repo consists all the projects i buld using HTML, CSS and Javscript.
+# Frequently asked questions.
+This page is designed with the goal of providing one stop answers to all the questions asked by clients frequently.
